@@ -24,6 +24,7 @@ public class MockWebServer implements Runnable {
             // TODO Accept incoming client connections
             Socket clientSocket = serverSocket.accept();
             // TODO Create input and output streams for the client socket
+            
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
