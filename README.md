@@ -21,6 +21,8 @@ The `MockWebServer` in package `th.mfu` serves the web server in our system. It 
 5. Study the code in `main()` and tell me What it does?
 ```
  write your through here.
+"it is fun to learn how client and server work.
+
 ```
 6. Run the `main()`, point the web browser to `http://localhost:8080` and `http://localhost:8081`
 It should shows a simple HTML with the word such as  `Hello, Web! on Port 8080`.
@@ -47,7 +49,11 @@ Run the `MockWebServerTest` in `src/test/java`. This test script create a new ob
 ## Challenge
 Think about the following,  modify the code to experiment it and put your thought below.
 - How can we run `MockWebserver` on different port? 
+
+Ans: can instantiate and start multiple MockWebServer objects, each on a unique port
+
 - How can we run more than 2 instances of  `MockWebserver`? 
+
 - How can we change the content in HTML such as showing table, more text and adding images?
 - What would be the benefit of running many instances?
 
