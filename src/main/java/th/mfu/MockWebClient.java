@@ -4,8 +4,10 @@ import java.io.*;
 import java.net.*;
 
 // call mockup server at port 8080
-public class MockWebClient {
-    public static void main(String[] args) {
+public class MockWebClient
+{
+    public static void main(String[] args)
+    {
 
         int portNumber = 8080;
 
@@ -17,7 +19,7 @@ public class MockWebClient {
 
         try(Socket socket = new Socket("localhost", portNumber))
         {
-            PrintWriter out = new PrintWriter(socket.getoutputStream(), true)
+            PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
@@ -43,5 +45,6 @@ public class MockWebClient {
             {
             e.printStackTrace();
             }
+        }
 
 }
